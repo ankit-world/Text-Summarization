@@ -3,18 +3,21 @@
 2. Update the requirements.txt file.
 3. Update code in setup.py file
 4. Add artifact_entity.py and config_entity.py file under entity folder
-5. create database.py under constant, mongo_db_connection.py under configuration, and write code for database connection and details
-6. Update logger and exception code,  gcloud bucket file for bucket name, create and update application.py file with port and host under constant folder
+5. Update logger and exception code
+6. Update common.py file in utility folder
 
 
 9. Go as per the workflow:
     - Data Ingestion
+        * upate config.yaml
+        * update params.yaml
         * update constant/training_pipeline/__init__.py
         * update entity/config_entity 
         * update entity/artifact_entity
         * update pipeline/train_pipeline.py
         * update components/data_ingestion.py
-        * create and update data_access/sensor_data.py
+        * update main.py
+        * update app.py
     
     
     - Data Transformation
